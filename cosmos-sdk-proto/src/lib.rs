@@ -19,6 +19,13 @@ pub mod cosmos {
             include!("prost/cosmos.auth.v1beta1.rs");
         }
     }
+    
+    /// Granting of arbitrary privileges from one account to another
+    pub mod authz {
+        pub mod v1beta1 {
+            include!("prost/cosmos.authz.v1beta1.rs");
+        }
+    }
 
     /// Balances.
     pub mod bank {
