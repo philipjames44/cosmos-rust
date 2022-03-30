@@ -57,6 +57,18 @@ pub trait MsgProto: Default + MessageExt + Sized {
     }
 }
 
+impl MsgProto for proto::cosmos::authz::v1beta1::MsgGrant {
+    const TYPE_URL: &'static str = "/cosmos.authz.v1beta1.MsgGrant";
+}
+
+impl MsgProto for proto::cosmos::authz::v1beta1::MsgRevoke {
+    const TYPE_URL: &'static str = "/cosmos.authz.v1beta1.MsgRevoke";
+}
+
+impl MsgProto for proto::cosmos::authz::v1beta1::MsgExec {
+    const TYPE_URL: &'static str = "/cosmos.authz.v1beta1.MsgExec";
+}
+
 impl MsgProto for proto::cosmos::bank::v1beta1::MsgSend {
     const TYPE_URL: &'static str = "/cosmos.bank.v1beta1.MsgSend";
 }
