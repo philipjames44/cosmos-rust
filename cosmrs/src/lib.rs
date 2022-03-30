@@ -7,6 +7,7 @@
 #![forbid(unsafe_code)]
 #![warn(trivial_casts, trivial_numeric_casts, unused_import_braces)]
 
+pub mod authz;
 pub mod bank;
 pub mod crypto;
 pub mod distribution;
