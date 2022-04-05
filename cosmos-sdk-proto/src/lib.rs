@@ -34,6 +34,14 @@ pub mod cosmos {
         }
     }
 
+    /// Allows accounts to grant fee allowances and to use fees from their accounts.
+    pub mod feegrant {
+        pub mod v1beta1 {
+            include!("prost/cosmos.feegrant.v1beta1.rs");
+        }
+    }
+
+
     /// Base functionality.
     pub mod base {
         /// Application BlockChain Interface (ABCI).
